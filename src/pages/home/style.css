@@ -1,0 +1,64 @@
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.conteudo{
+    margin-top: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 120px;
+    
+}
+
+.conteudo h2, .conteudo p{
+    font-family: sans-serif;
+    padding-right: 10%;
+}
+
+.container-filme-categoria{
+    display: flex;
+}
+
+.container-filme{
+    padding-top: 70px;
+}
+
+.container-filme img {
+    height: 80px;
+}
+
+.container-filme h2 {
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.container-filme p{
+    font-family: sans-serif;
+    padding-right: 15%;
+}
+
+.container-categoria{
+    padding-left: 10%;
+    padding-top: 70px;
+    justify-content: flex-end;
+}
+
+.container-categoria img {
+    height: 80px;
+}
+
+.container-categoria h2 {
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.container-categoria p{
+    font-family: sans-serif;
+    padding-right: 15%;
+}

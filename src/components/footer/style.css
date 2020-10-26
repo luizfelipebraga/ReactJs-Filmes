@@ -1,0 +1,45 @@
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 13em;
+    width: 100%;
+    overflow: hidden;
+
+    background-color:#F6511D ;
+    box-sizing: border-box;
+
+    
+    bottom:0;
+    left:0;
+    
+    padding-left: 13%;
+}
+
+.verticalLine{
+    width: 150px;
+    height: 0px;
+    left: 720px;
+    top: 805px;
+    
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.inner-footer .logo-container img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-third p {
+    color: white;
+    font-family: sans-serif;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin: 15px;
+}

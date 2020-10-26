@@ -1,0 +1,27 @@
+.box-cadastro{
+    padding-top: 70px;
+    width: 60%;
+    padding-left: 40%;
+    padding-right:0%;
+}
+
+.box-cadastro label {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #4B2142;
+    font-weight: 500;
+}
+
+input[type=option],[type=text],[type=email], input[type=password] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #4e4e4e;
+    box-sizing: border-box;
+  }
+
+
+  Footer{
+    position: relative;
+  }
