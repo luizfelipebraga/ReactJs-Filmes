@@ -1,0 +1,58 @@
+- Conteúdo de ReactJs feito com gerenciador yarn em Typescript.
+- yarn install | nodejs install
+
+!--Criação do Projeto em TypeScript--!
+- yarn create react-app "nome projeto" (--template para programar com typecript no projeto. Se nao colocar por padrao ele vem como Jsx) typescript
+  => yarn create react-app filmes --template typescript
+!--#--!  
+  
+!--Bibliotecas--!
+ROTAS - yarn add react-router-dom | yarn add @types/react-router-dom -D 
+Token - yarn add @types/jwt-decode -D
+Api -   yarn add @types/axios -D 
+!--#--!
+
+
+
+-Routes
+
+const RotaPrivadaCandidato = ({ Component, ...rest }: any) => (
+    <Route
+      {...rest}
+      render={props =>
+        // Se sim, renderiza de acordo com a rota solicitada e permitida
+        // Se não, redireciona para a página de login
+        jwt() !== null && jwt().role === '1' ? (<Component {...props} />) : (<Redirect to={{ pathname: "/" }} />)
+      }
+    />
+  );
+  
+  const RotaPrivadaEmpresa = ({ Component, ...rest }: any) => (
+    <Route
+      {...rest}
+      render={props =>
+        // Se sim, renderiza de acordo com a rota solicitada e permitida
+        // Se não, redireciona para a página de login
+        jwt() !== null && jwt().role === '2' ? (<Component {...props} />) : (<Redirect to={{ pathname: "/" }} />)
+      }
+    />
+  );
+
+  const RotaPrivadaAdm = ({ Component, ...rest }: any) => (
+    <Route
+      {...rest}
+      render={props =>
+        // Se sim, renderiza de acordo com a rota solicitada e permitida
+        // Se não, redireciona para a página de login
+        jwt() !== null && jwt().role === '3' ? (<Component {...props} />) : (<Redirect to={{ pathname: "/" }} />)
+      }
+    />
+  );
+  
+  return (
+    <BrowserRouter>
+      <Route path="/" exact component={Login} />
+      <Route path="/cadastrar" exact component={CadastrarVaga} />
+    </BrowserRouter>
+  );
+}
